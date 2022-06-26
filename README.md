@@ -22,6 +22,21 @@ Set up `.postcssrc` to compile tailwindcss with postcss.
 }
 ```
 
+Set up `tailwind.config.js` to compile tailwindcss with postcss.
+
+``` JS :tailwind.config.js
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{html,js,elm}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+
 Write settings in `package.json`.
 
 ``` JSON :package.json
