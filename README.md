@@ -1,10 +1,18 @@
 
+Install elm and parcel
 
 ``` Bash
 $ npm i -D elm parcel tailwindcss @parcel/transformer-elm
+```
+
+Initialize elm and parcel
+
+``` Bash
 $ npx elm init
 $ npx tailwindcss init
 ```
+
+Set up `.postcssrc` to compile tailwindcss with postcss.
 
 ``` JSON :.postcssrc
 {
@@ -13,6 +21,8 @@ $ npx tailwindcss init
   }
 }
 ```
+
+Write settings in `package.json`.
 
 ``` JSON :package.json
 {
@@ -30,6 +40,10 @@ $ npx tailwindcss init
 }
 ```
 
+
+Save the pre-compiled file in `src`.
+Prepare `src/index.html`
+
 ``` HTML :src/index.html
 <!DOCTYPE html>
 <html>
@@ -45,6 +59,8 @@ $ npx tailwindcss init
 </html>
 ```
 
+Prepare `src/index.css`
+
 ``` CSS :src/index.css
 @tailwind base;
 @tailwind components;
@@ -52,11 +68,15 @@ $ npx tailwindcss init
 ```
 
 
+Prepare `src/index.js`
+
 ``` JS :src/index.js
 import { Elm } from "./Main.elm";
 
 Elm.Main.init({ node: document.getElementById("root") });
 ```
+
+Write logic in `src/Main.elm` with elm.
 
 ``` elm :src/Main.elm
 module Main exposing (main)
@@ -102,6 +122,22 @@ view model =
         ]
 ```
 
+Build
+
 ```
 $ npm run build
 ```
+
+Local development
+
+```
+$ npm run start
+```
+
+Delete built files
+
+```
+$ npm run clean
+```
+
+
