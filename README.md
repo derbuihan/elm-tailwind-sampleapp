@@ -20,6 +20,12 @@ $ npx elm init
 $ npx tailwindcss init
 ```
 
+Create files
+
+``` Bash
+$ touch .postcssrc src/index.html src/index.css src/index.js src/Main.elm
+```
+
 Set up `.postcssrc` to compile tailwindcss with postcss.
 
 ``` JSON :.postcssrc
