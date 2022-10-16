@@ -1,4 +1,11 @@
 
+Craete project
+
+``` Bash
+$ mkdir elm-tailwindcss-sampleapp
+$ cd elm-tailwindcss-sampleapp
+```
+
 Install elm and parcel
 
 ``` Bash
