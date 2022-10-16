@@ -4,15 +4,16 @@ Craete project
 ``` Bash
 $ mkdir elm-tailwindcss-sampleapp
 $ cd elm-tailwindcss-sampleapp
+$ npm init -y
 ```
 
-Install elm and parcel
+Install elm, parcel and tailwindcss
 
 ``` Bash
 $ npm i -D elm parcel tailwindcss @parcel/transformer-elm
 ```
 
-Initialize elm and parcel
+Initialize elm and tailwindcss
 
 ``` Bash
 $ npx elm init
